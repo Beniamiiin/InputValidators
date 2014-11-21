@@ -45,6 +45,8 @@
 		80D3F918182B757700DCF7C0 /* ValidatorExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80D3F916182B757700DCF7C0 /* ValidatorExampleViewController.xib */; };
 		80D3F91C182B848D00DCF7C0 /* MultipleValidatorExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D3F91A182B848D00DCF7C0 /* MultipleValidatorExampleViewController.m */; };
 		80D3F91D182B848D00DCF7C0 /* MultipleValidatorExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80D3F91B182B848D00DCF7C0 /* MultipleValidatorExampleViewController.xib */; };
+		C32379F91A1FD7C000B87CCB /* LKCardNumberValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C32379F81A1FD7C000B87CCB /* LKCardNumberValidator.m */; };
+		C32379FC1A1FD7E400B87CCB /* LKPhoneValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C32379FB1A1FD7E400B87CCB /* LKPhoneValidator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,10 @@
 		80D3F919182B848D00DCF7C0 /* MultipleValidatorExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleValidatorExampleViewController.h; sourceTree = "<group>"; };
 		80D3F91A182B848D00DCF7C0 /* MultipleValidatorExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleValidatorExampleViewController.m; sourceTree = "<group>"; };
 		80D3F91B182B848D00DCF7C0 /* MultipleValidatorExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultipleValidatorExampleViewController.xib; sourceTree = "<group>"; };
+		C32379F71A1FD7C000B87CCB /* LKCardNumberValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCardNumberValidator.h; sourceTree = "<group>"; };
+		C32379F81A1FD7C000B87CCB /* LKCardNumberValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCardNumberValidator.m; sourceTree = "<group>"; };
+		C32379FA1A1FD7E400B87CCB /* LKPhoneValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKPhoneValidator.h; sourceTree = "<group>"; };
+		C32379FB1A1FD7E400B87CCB /* LKPhoneValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKPhoneValidator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,18 +218,22 @@
 			isa = PBXGroup;
 			children = (
 				80045EC219077DFB00ED5BE5 /* LKValidators.h */,
-				808F5AD9182A1D3E0019CEFF /* LKAlphaInputValidator.h */,
-				808F5ADA182A1D3E0019CEFF /* LKAlphaInputValidator.m */,
-				808F5ADB182A1D3E0019CEFF /* LKEmailInputValidator.h */,
-				808F5ADC182A1D3E0019CEFF /* LKEmailInputValidator.m */,
 				808F5ADD182A1D3E0019CEFF /* LKValidator.h */,
 				808F5ADE182A1D3E0019CEFF /* LKValidator.m */,
 				80045EBE19077D7100ED5BE5 /* LKValidator+MultipleValidation.h */,
 				80045EBF19077D7100ED5BE5 /* LKValidator+MultipleValidation.m */,
-				808F5AE0182A1D3E0019CEFF /* LKNumericInputValidator.h */,
-				808F5AE1182A1D3E0019CEFF /* LKNumericInputValidator.m */,
 				808F5AE2182A1D3E0019CEFF /* LKRegularExpressionInputValidator.h */,
 				808F5AE3182A1D3E0019CEFF /* LKRegularExpressionInputValidator.m */,
+				808F5AD9182A1D3E0019CEFF /* LKAlphaInputValidator.h */,
+				808F5ADA182A1D3E0019CEFF /* LKAlphaInputValidator.m */,
+				808F5ADB182A1D3E0019CEFF /* LKEmailInputValidator.h */,
+				808F5ADC182A1D3E0019CEFF /* LKEmailInputValidator.m */,
+				C32379F71A1FD7C000B87CCB /* LKCardNumberValidator.h */,
+				C32379F81A1FD7C000B87CCB /* LKCardNumberValidator.m */,
+				C32379FA1A1FD7E400B87CCB /* LKPhoneValidator.h */,
+				C32379FB1A1FD7E400B87CCB /* LKPhoneValidator.m */,
+				808F5AE0182A1D3E0019CEFF /* LKNumericInputValidator.h */,
+				808F5AE1182A1D3E0019CEFF /* LKNumericInputValidator.m */,
 				808F5AE4182A1D3E0019CEFF /* LKRequiredInputValidator.h */,
 				808F5AE5182A1D3E0019CEFF /* LKRequiredInputValidator.m */,
 				80CC57721908D54000DCAEFA /* LKLengthInputValidator.h */,
@@ -338,6 +348,7 @@
 				80D3F917182B757700DCF7C0 /* ValidatorExampleViewController.m in Sources */,
 				808F5ABA182A1D270019CEFF /* AppDelegate.m in Sources */,
 				8014DCC4182A20DC0084F0B9 /* ExampleViewController.m in Sources */,
+				C32379FC1A1FD7E400B87CCB /* LKPhoneValidator.m in Sources */,
 				808F5AB6182A1D270019CEFF /* main.m in Sources */,
 				808F5AF2182A1D3E0019CEFF /* LKRequiredInputValidator.m in Sources */,
 				80045EC019077D7100ED5BE5 /* LKValidator+MultipleValidation.m in Sources */,
@@ -346,6 +357,7 @@
 				808F5AF4182A1D3E0019CEFF /* UITextField+LKValidators.m in Sources */,
 				808F5AEE182A1D3E0019CEFF /* LKNumericInputValidator.m in Sources */,
 				808F5AE8182A1D3E0019CEFF /* LKAlphaInputValidator.m in Sources */,
+				C32379F91A1FD7C000B87CCB /* LKCardNumberValidator.m in Sources */,
 				808F5AEC182A1D3E0019CEFF /* LKValidator.m in Sources */,
 				808F5AF0182A1D3E0019CEFF /* LKRegularExpressionInputValidator.m in Sources */,
 			);
