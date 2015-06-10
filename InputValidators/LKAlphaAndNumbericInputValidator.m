@@ -14,7 +14,7 @@
 	self = [super init];
 	if (self) {
 		self.reason = NSLocalizedString(@"The input can contain only numerical values", @"Validator reason (Alert)");
-		_regularExpression = @"^[0-9a-zA-Z]*$";
+		_regularExpression = @"^[0-9a-zA-Z\\p{Cyrillic}]*$";
 		_errorCode = InputValidationAlphabetAndNumericErrorCode;
 	}
 	
