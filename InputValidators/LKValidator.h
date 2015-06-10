@@ -27,6 +27,9 @@ static NSInteger const InputValidationNumericErrorCode = 1001;
 static NSInteger const InputValidationAlphabetErrorCode = 1002;
 static NSInteger const InputValidationEmailErrorCode = 1003;
 static NSInteger const InputValidationRequiredErrorCode = 1004;
+static NSInteger const InputValidationPhoneErrorCode = 1005;
+static NSInteger const InputValidationCardErrorCode = 1006;
+static NSInteger const InputValidationAlphabetAndNumericErrorCode = 1007;
 static NSInteger const InputValidationMultipleErrorCode = 1100;
 
 

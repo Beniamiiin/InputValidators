@@ -23,6 +23,8 @@
 #import "LKAlphaInputValidator.h"
 #import "LKEmailInputValidator.h"
 #import "LKPhoneValidator.h"
+#import "LKCardNumberValidator.h"
+#import "LKAlphaAndNumbericInputValidator.h"
 #import "LKNumericInputValidator.h"
 #import "LKRegularExpressionInputValidator.h"
 #import "LKRequiredInputValidator.h"

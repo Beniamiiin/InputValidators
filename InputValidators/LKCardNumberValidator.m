@@ -10,4 +10,15 @@
 
 @implementation LKCardNumberValidator
 
+- (id) init {
+	self = [super init];
+	if (self) {
+		self.reason = NSLocalizedString(@"Email is incorrect", @"Validator reason (Alert)");
+		_regularExpression = @"[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}";
+		_errorCode = InputValidationCardErrorCode;
+	}
+	
+	return self;
+}
+
 @end
