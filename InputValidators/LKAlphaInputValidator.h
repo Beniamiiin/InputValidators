@@ -24,4 +24,7 @@
 
 @interface LKAlphaInputValidator : LKRegularExpressionInputValidator
 
+@property (nonatomic, assign) BOOL onlyLatin;
+@property (nonatomic, assign) BOOL onlyCyrillic;
+
 @end

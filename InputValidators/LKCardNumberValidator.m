@@ -13,7 +13,7 @@
 - (id) init {
 	self = [super init];
 	if (self) {
-		self.reason = NSLocalizedString(@"Email is incorrect", @"Validator reason (Alert)");
+		self.reason = NSLocalizedString(@"Card number is incorrect", @"Validator reason (Alert)");
 		_regularExpression = @"[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}";
 		_errorCode = InputValidationCardErrorCode;
 	}

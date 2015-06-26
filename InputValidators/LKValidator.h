@@ -30,6 +30,7 @@ static NSInteger const InputValidationRequiredErrorCode = 1004;
 static NSInteger const InputValidationPhoneErrorCode = 1005;
 static NSInteger const InputValidationCardErrorCode = 1006;
 static NSInteger const InputValidationAlphabetAndNumericErrorCode = 1007;
+static NSInteger const InputValidationAntErrorCode = 1008;
 static NSInteger const InputValidationMultipleErrorCode = 1100;
 
 

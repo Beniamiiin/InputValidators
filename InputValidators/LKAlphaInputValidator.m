@@ -29,11 +29,27 @@
     
     if (self) {
         self.reason = NSLocalizedString(@"The input can contain only letters", @"Validator reason (Alert)");
-        _regularExpression = @"^[a-zA-Z]*$";
         _errorCode = InputValidationAlphabetErrorCode;
     }
     
     return self;
+}
+
+- (BOOL) validateInput:(NSString *)input error:(NSError **) error {
+	_regularExpression = @"^[a-zA-Z\\p{Cyrillic}]*$";
+	
+	if ( _onlyLatin )
+	{
+		self.reason = NSLocalizedString(@"The input can contain only latin letters", @"Validator reason (Alert)");
+		_regularExpression = @"^[a-zA-Z]*$";
+	}
+	else if ( _onlyCyrillic )
+	{
+		self.reason = NSLocalizedString(@"The input can contain only cyryllic letters", @"Validator reason (Alert)");
+		_regularExpression = @"^[а-яА-Я]*$";
+	}
+	
+	return [super validateInput:input error:error];
 }
 
 @end
