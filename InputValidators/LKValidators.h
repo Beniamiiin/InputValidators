@@ -29,6 +29,7 @@
 #import "LKRegularExpressionInputValidator.h"
 #import "LKRequiredInputValidator.h"
 #import "LKLengthInputValidator.h"
+#import "LKAnyInputValidator.h"
 
 #import "UITextField+LKValidators.h"
 #import "LKValidator+MultipleValidation.h"
