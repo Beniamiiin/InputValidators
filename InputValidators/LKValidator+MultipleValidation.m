@@ -45,7 +45,10 @@
         }
         [errorMessage deleteCharactersInRange:NSMakeRange([errorMessage length] - 1, 1)];
         
-        *error = [[self class] errorWithReason:errorMessage code:InputValidationMultipleErrorCode];
+		if ( error )
+		{
+			*error = [[self class] errorWithReason:errorMessage code:InputValidationMultipleErrorCode];
+		}
     }
     
     return isValid;
