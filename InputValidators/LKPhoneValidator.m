@@ -14,7 +14,7 @@
 	self = [super init];
 	if (self) {
 		self.reason = NSLocalizedString(@"Phone number is incorrect", @"Validator reason (Alert)");
-		_regularExpression = @"\\+[0-9]{1}[ (\\-]+[0-9]{3}[)\\- ]*[0-9]{2,3}\\-[0-9]{2,3}\\-[0-9]{2,3}";
+		_regularExpression = @"\\+[0-9]{1}[ (\\-]+[0-9]{3,4}[)\\- ]*[0-9]{2,3}\\-[0-9]{2,3}\\-[0-9]{2,3}";
 		_errorCode = InputValidationPhoneErrorCode;
 	}
 	
